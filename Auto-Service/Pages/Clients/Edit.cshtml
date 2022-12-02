@@ -1,10 +1,10 @@
 ﻿@page
-@model Auto_Service.Pages.Staff.CreateModel
+@model Auto_Service.Pages.Clients.EditModel
 @{
 }
 
 <br>
-<h2>Новый работник</h2>
+<h2>Редактирование клиента</h2>
 
 @if (Model.errorMessage.Length > 0)
 {
@@ -15,34 +15,29 @@
 }
 
 <form method="POST">
+	<input type="hidden" name="id" value="@Model.clientInfo.id">
 	<div class="row mb-3">
 		<label class="col-sm-3 col-form-label">Фамилия</label>
 		<div class="col-sm-6">
-			<input type="text" class="form-control" name="surname" value="@Model.staffInfo.surname">
+			<input type="text" class="form-control" name="surname" value="@Model.clientInfo.surname">
 		</div>
 	</div>
 	<div class="row mb-3">
 		<label class="col-sm-3 col-form-label">Имя</label>
 		<div class="col-sm-6">
-			<input type="text" class="form-control" name="name" value="@Model.staffInfo.name">
+			<input type="text" class="form-control" name="name" value="@Model.clientInfo.name">
 		</div>
 	</div>
 	<div class="row mb-3">
-		<label class="col-sm-3 col-form-label">Эл.почта</label>
+		<label class="col-sm-3 col-form-label">Телефон</label>
 		<div class="col-sm-6">
-			<input type="text" class="form-control" name="email" value="@Model.staffInfo.email">
+			<input type="text" class="form-control" name="phone" value="@Model.clientInfo.phone">
 		</div>
 	</div>
 	<div class="row mb-3">
-		<label class="col-sm-3 col-form-label">Должность</label>
+		<label class="col-sm-3 col-form-label">Тип</label>
 		<div class="col-sm-6">
-			<input type="text" class="form-control" name="position" value="@Model.staffInfo.position">
-		</div>
-	</div>
-	<div class="row mb-3">
-		<label class="col-sm-3 col-form-label">Статус</label>
-		<div class="col-sm-6">
-			<input type="text" class="form-control" name="status" value="@Model.staffInfo.status">
+			<input type="text" class="form-control" name="type" value="@Model.clientInfo.type">
 		</div>
 	</div>
 
@@ -60,10 +55,10 @@
 
 	<div class="row mb-3">
 		<div class="offset-sm-3 col-sm-3 d-grid">
-			<button type="submit" class="btn btn-primary">Создать</button>
+			<button type="submit" class="btn btn-primary">Сохранить</button>
 		</div>
 		<div class="col-sm-3 d-grid">
-			<a class="btn btn-outline-primary" href="/Staff/Index" role="button">Скрыть</a>
+			<a class="btn btn-outline-primary" href="/Clients/Clients" role="button">Скрыть</a>
 		</div>
 	</div>
 </form>

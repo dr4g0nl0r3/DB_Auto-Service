@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\perez\Desktop\autoservice\Auto-Service\Auto-Service
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Clients/Clients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDbGllbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +42,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Services/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Services/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Services/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Shared/_ValidationScriptsPartial.cshtml]

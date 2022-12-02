@@ -1,0 +1,36 @@
+﻿@page
+@model Auto_Service.Pages.Clients.ClientsModel
+@{
+	ViewData["Title"] = "Клиенты";
+}
+
+<br>
+<h2>Список клиентов</h2>
+<a class='btn btn-primary btn-sm' href="/Clients/Create">Новый работник</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Фамилия</th>
+			<th>Имя</th>
+			<th>Телефон</th>
+			<th>Тип</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listClients)
+		{
+					<tr>
+						<td>@item.id</td>
+						<td>@item.surname</td>
+						<td>@item.name</td>
+						<td>@item.phone</td>
+						<td>@item.type</td>
+						<td>
+							<a class="btn btn-primary btn-sm" href="/Clients/Edit?id=@item.id">Редактировать</a>
+							<a class="btn btn-danger btn-sm" href="/Clients/Delete?id=@item.id">Удалить</a>
+						</td>
+					</tr>
+		}
+	</tbody>
+</table>

@@ -17,7 +17,7 @@ namespace Auto_Service.Pages.Staff
 
 			try
 			{
-				String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=AutoService;Integrated Security=True";
+				String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=auto-service;Integrated Security=True";
 
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{
@@ -48,7 +48,7 @@ namespace Auto_Service.Pages.Staff
 		}
 		public void OnPost()
 		{
-			staffInfo.id = "" + Request.Form["id"];
+			staffInfo.id = Request.Form["id"];
 			staffInfo.surname = Request.Form["surname"];
 			staffInfo.name = Request.Form["name"];
 			staffInfo.email = Request.Form["email"];
@@ -63,12 +63,12 @@ namespace Auto_Service.Pages.Staff
 
 			try
 			{
-				string connectionString = "Data Source=.\\sqlexpress;Initial Catalog=AutoService;Integrated Security=True";
+				string connectionString = "Data Source=.\\sqlexpress;Initial Catalog=auto-service;Integrated Security=True";
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{
 					connection.Open();
-					String sql = "UPDATE staff" +
-						"SET surname=@surname, name=@name, position=@position, status=@status" +
+					String sql = "UPDATE staff " +
+						"SET surname=@surname, name=@name, email=@email, position=@position, status=@status " +
 						"WHERE id=@id";
 
 					using (SqlCommand command = new SqlCommand(sql, connection))

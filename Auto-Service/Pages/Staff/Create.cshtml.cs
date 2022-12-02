@@ -30,7 +30,7 @@ namespace Auto_Service.Pages.Staff
 			//save new staff into DB
 			try
 			{
-				String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=AutoService;Integrated Security=True";
+				String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=auto-service;Integrated Security=True";
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{
 					connection.Open();
