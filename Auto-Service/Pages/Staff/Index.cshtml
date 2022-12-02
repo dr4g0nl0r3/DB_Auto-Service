@@ -1,0 +1,37 @@
+﻿@page
+@model Auto_Service.Pages.Staff.IndexModel
+@{
+	ViewData["Title"] = "Персонал";
+}
+
+<br>
+<h2>Список сотрудников</h2>
+<a class='btn btn-primary btn-sm' href="/Staff/Create">Новый работник</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Фамилия</th>
+			<th>Имя</th>
+			<th>Должность</th>
+			<th>Статус</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listStaff)
+		{
+			<tr>
+				<td>@item.id</td>
+				<td>@item.surname</td>
+				<td>@item.name</td>
+				<td>@item.email</td>
+				<td>@item.position</td>
+				<td>@item.status</td>
+				<td>
+					<a class="btn btn-primary btn-sm" href="/Staff/Edit?id=@item.id">Редактировать</a>
+					<a class="btn btn-danger btn-sm" href="/Staff/Delete?id=@item.id">Удалить</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
