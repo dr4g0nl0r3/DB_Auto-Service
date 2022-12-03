@@ -1,0 +1,42 @@
+﻿@page
+@model Auto_Service.Pages.Orders.OrdersModel
+@{
+	ViewData["Title"] = "Заказы";
+}
+
+<br>
+<h2>Список заказов</h2>
+<a class='btn btn-primary btn-sm' href="/Oders/Create">Новый заказ</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Дата</th>
+			<th>Цена</th>
+			<th>Услуга</th>
+			<th>Товар</th>
+			<th>Телефон клиента</th>
+			<th>Гос.номер авто клиента</th>
+			<th>Почта сотрудника</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listOrders)
+		{
+				<tr>
+					<td>@item.id</td>
+					<td>@item.date</td>
+					<td>@item.price</td>
+					<td>@item.service</td>
+					<td>@item.spare</td>
+					<td>@item.clphone</td>
+					<td>@item.carnum</td>
+					<td>@item.emstaff</td>
+					<td>
+						<a class="btn btn-primary btn-sm" href="/Orders/Edit?id=@item.id">Редактировать</a>
+						<a class="btn btn-danger btn-sm" href="/Orders/Delete?id=@item.id">Удалить</a>
+					</td>
+				</tr>
+		}
+	</tbody>
+</table>
