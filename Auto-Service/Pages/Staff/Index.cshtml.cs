@@ -27,9 +27,10 @@ namespace Auto_Service.Pages.Staff
 								staffInfo.id = "" + reader.GetInt32(0);
 								staffInfo.surname = reader.GetString(1);
 								staffInfo.name = reader.GetString(2);
-								staffInfo.email = reader.GetString(3);
-								staffInfo.position = reader.GetString(4);
-								staffInfo.status = reader.GetString(5);
+								staffInfo.age = reader.GetString(3);
+								staffInfo.email = reader.GetString(4);
+								staffInfo.position = reader.GetString(5);
+								staffInfo.status = reader.GetString(6);
 
 								listStaff.Add(staffInfo);
 							}
@@ -50,6 +51,7 @@ namespace Auto_Service.Pages.Staff
 		public string id;
 		public string surname;
 		public string name;
+		public string age;
 		public string email;
 		public string position;
 		public string status;

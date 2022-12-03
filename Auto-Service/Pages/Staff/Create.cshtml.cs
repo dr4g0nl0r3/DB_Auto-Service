@@ -17,11 +17,12 @@ namespace Auto_Service.Pages.Staff
 		{
 			staffInfo.surname = Request.Form["surname"];
 			staffInfo.name = Request.Form["name"];
+			staffInfo.age = Request.Form["age"];
 			staffInfo.email = Request.Form["email"];
 			staffInfo.position = Request.Form["position"];
 			staffInfo.status = Request.Form["status"];
 
-			if (staffInfo.surname.Length == 0 || staffInfo.name.Length == 0 || staffInfo.email.Length == 0 || staffInfo.position.Length == 0 || staffInfo.status.Length == 0)
+			if (staffInfo.surname.Length == 0 || staffInfo.name.Length == 0 || staffInfo.email.Length == 0 || staffInfo.position.Length == 0 || staffInfo.status.Length == 0 || staffInfo.age.Length == 0)
 			{
 				errorMessage = "Все поля обязательны к заполнению!";
 				return;
@@ -42,6 +43,7 @@ namespace Auto_Service.Pages.Staff
 					{
 						command.Parameters.AddWithValue("@surname", staffInfo.surname);
 						command.Parameters.AddWithValue("@name", staffInfo.name);
+						command.Parameters.AddWithValue("@age", staffInfo.age);
 						command.Parameters.AddWithValue("@email", staffInfo.email);
 						command.Parameters.AddWithValue("@position", staffInfo.position);
 						command.Parameters.AddWithValue("@status", staffInfo.status);
@@ -58,6 +60,7 @@ namespace Auto_Service.Pages.Staff
 
 			staffInfo.surname = "";
 			staffInfo.name = "";
+			staffInfo.age = "";
 			staffInfo.email = "";
 			staffInfo.position = "";
 			staffInfo.status = "";

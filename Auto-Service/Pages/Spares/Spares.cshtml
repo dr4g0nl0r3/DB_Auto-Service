@@ -1,0 +1,32 @@
+﻿@page
+@model Auto_Service.Pages.Spares.SparesModel
+@{
+	ViewData["Title"] = "Запчасти";
+}
+
+<br>
+<h2>Список товаров</h2>
+<a class='btn btn-primary btn-sm' href="/Spares/Create">Новый товар</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Наименование</th>
+			<th>Цена</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listSpares)
+		{
+			<tr>
+				<td>@item.id</td>
+				<td>@item.name</td>
+				<td>@item.price</td>
+				<td>
+					<a class="btn btn-primary btn-sm" href="/Spares/Edit?id=@item.id">Редактировать</a>
+					<a class="btn btn-danger btn-sm" href="/Spares/Delete?id=@item.id">Удалить</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

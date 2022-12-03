@@ -33,9 +33,10 @@ namespace Auto_Service.Pages.Staff
 								staffInfo.id = "" + reader.GetInt32(0);
 								staffInfo.surname = reader.GetString(1);
 								staffInfo.name = reader.GetString(2);
-								staffInfo.email = reader.GetString(3);
-								staffInfo.position = reader.GetString(4);
-								staffInfo.status = reader.GetString(5);
+								staffInfo.age = reader.GetString(3);
+								staffInfo.email = reader.GetString(4);
+								staffInfo.position = reader.GetString(5);
+								staffInfo.status = reader.GetString(6);
 							}
 						}
 					}
@@ -51,11 +52,12 @@ namespace Auto_Service.Pages.Staff
 			staffInfo.id = Request.Form["id"];
 			staffInfo.surname = Request.Form["surname"];
 			staffInfo.name = Request.Form["name"];
+			staffInfo.age = Request.Form["age"];
 			staffInfo.email = Request.Form["email"];
 			staffInfo.position = Request.Form["position"];
 			staffInfo.status = Request.Form["status"];
 
-			if (staffInfo.id.Length == 0 || staffInfo.surname.Length == 0 || staffInfo.name.Length == 0 || staffInfo.email.Length == 0 || staffInfo.position.Length == 0 || staffInfo.status.Length == 0)
+			if (staffInfo.id.Length == 0 || staffInfo.surname.Length == 0 || staffInfo.name.Length == 0 || staffInfo.email.Length == 0 || staffInfo.position.Length == 0 || staffInfo.status.Length == 0 || staffInfo.age.Length == 0)
 			{
 				errorMessage = "Все поля обязательны к заполнению!";
 				return;
@@ -68,7 +70,7 @@ namespace Auto_Service.Pages.Staff
 				{
 					connection.Open();
 					String sql = "UPDATE staff " +
-						"SET surname=@surname, name=@name, email=@email, position=@position, status=@status " +
+						"SET surname=@surname, name=@name, age=@age, email=@email, position=@position, status=@status " +
 						"WHERE id=@id";
 
 					using (SqlCommand command = new SqlCommand(sql, connection))
@@ -76,6 +78,7 @@ namespace Auto_Service.Pages.Staff
 						command.Parameters.AddWithValue("@id", staffInfo.id);
 						command.Parameters.AddWithValue("@surname", staffInfo.surname);
 						command.Parameters.AddWithValue("@name", staffInfo.name);
+						command.Parameters.AddWithValue("@age", staffInfo.age);
 						command.Parameters.AddWithValue("@email", staffInfo.email);
 						command.Parameters.AddWithValue("@position", staffInfo.position);
 						command.Parameters.AddWithValue("@status", staffInfo.status);

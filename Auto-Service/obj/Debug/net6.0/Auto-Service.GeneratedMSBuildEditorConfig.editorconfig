@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Services/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Services/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +62,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Spares/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BhcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Spares/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BhcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Spares/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BhcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Spares/Spares.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BhcmVzXFNwYXJlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Staff/Create.cshtml]
