@@ -1,0 +1,34 @@
+﻿@page
+@model Auto_Service.Pages.Cars.CarsModel
+@{
+	ViewData["Title"] = "Автомобили";
+}
+
+<br>
+<h2>Список автомобилей клиентов с гос.номером</h2>
+<a class='btn btn-primary btn-sm' href="/Cars/Create">Новое авто</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Автомобиль</th>
+			<th>Гос.номер</th>
+			<th>Номер телефона клиента</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listCars)
+		{
+				<tr>
+					<td>@item.id</td>
+					<td>@item.name</td>
+					<td>@item.carnum</td>
+					<td>@item.clphone</td>
+					<td>
+						<a class="btn btn-primary btn-sm" href="/Cars/Edit?id=@item.id">Редактировать</a>
+						<a class="btn btn-danger btn-sm" href="/Cars/Delete?id=@item.id">Удалить</a>
+					</td>
+				</tr>
+		}
+	</tbody>
+</table>

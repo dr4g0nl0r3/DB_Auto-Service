@@ -1,0 +1,38 @@
+﻿@page
+@model Auto_Service.Pages.Deliveres.DeliveresModel
+@{
+	ViewData["Title"] = "Поставки";
+}
+
+<br>
+<h2>Список поставок</h2>
+<a class='btn btn-primary btn-sm' href="/Deliveres/Create">Новая поставка</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Дата</th>
+			<th>Запчасть</th>
+			<th>Количество</th>
+			<th>Цена</th>
+			<th>Поставщик</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listDeliveres)
+		{
+					<tr>
+						<td>@item.id</td>
+						<td>@item.date</td>
+						<td>@item.spname</td>
+						<td>@item.quantity</td>
+						<td>@item.price</td>
+						<td>@item.sup</td>
+						<td>
+							<a class="btn btn-primary btn-sm" href="/Deliveres/Edit?id=@item.id">Редактировать</a>
+							<a class="btn btn-danger btn-sm" href="/Deliveres/Delete?id=@item.id">Удалить</a>
+						</td>
+					</tr>
+		}
+	</tbody>
+</table>

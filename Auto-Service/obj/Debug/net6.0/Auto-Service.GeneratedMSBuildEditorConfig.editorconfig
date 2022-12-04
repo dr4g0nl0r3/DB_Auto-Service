@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\perez\Desktop\autoservice\Auto-Service\Auto-Service
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Cars/Cars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Cars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Cars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Cars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Clients/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDbGllbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,12 +48,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Deliveres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Deliveres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Deliveres/Deliveres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmVzXERlbGl2ZXJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Deliveres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/perez/Desktop/autoservice/Auto-Service/Auto-Service/Pages/Orders/Orders.cshtml]

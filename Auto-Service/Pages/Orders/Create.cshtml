@@ -1,0 +1,81 @@
+﻿@page
+@model Auto_Service.Pages.Orders.CreateModel
+@{
+}
+
+<br>
+<h2>Новый заказ</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+			<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+				<strong>@Model.errorMessage</strong>
+				<button type='button' class='btn-close' data-ds-dismiss='alert' aria-label="Close"></button>
+			</div>
+}
+
+<form method="POST">
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Дата</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="date" value="@Model.orderInfo.date">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Цена</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="price" value="@Model.orderInfo.price">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Услуга</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="service" value="@Model.orderInfo.service">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Запчасть</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="spare" value="@Model.orderInfo.spare">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Телефон клиента</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="clphone" value="@Model.orderInfo.clphone">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Гос.номер авто клиента</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="carnum" value="@Model.orderInfo.carnum">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Почта сотрудника</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="emstaff" value="@Model.orderInfo.emstaff">
+		</div>
+	</div>
+
+	@if (Model.successMessage.Length > 0)
+	{
+				<div class="row mb-3">
+					<div class="col-sm-9">
+						<div class='alert alert-success alert-dismissible fade show' role='alert'>
+							<strong>@Model.successMessage</strong>
+							<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+						</div>
+					</div>
+				</div>
+	}
+
+	<div class="row mb-3">
+		<div class="offset-sm-3 col-sm-3 d-grid">
+			<button type="submit" class="btn btn-primary">Создать</button>
+		</div>
+		<div class="col-sm-3 d-grid">
+			<a class="btn btn-outline-primary" href="/Spares/Spares" role="button">Скрыть</a>
+		</div>
+	</div>
+</form>
